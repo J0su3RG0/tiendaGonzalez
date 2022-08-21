@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type"text/css" rel="stylesheet" href="../css/hoja-estilo.css"/>
+    <link rel="shorcut icon" href="../imagenes/logos/calabaza.svg">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar"> <!-- Menu de navegacion-->
+            <div class="sub sub1 menuAnimado"><img class="logo" src="../imagenes/logos/logo.webp" alt="logo"></div>
+            <div class="sub sub2 menuAnimado"><a title="inicio" href="../index.html">Inicio</a></div>
+            <div class="sub sub3 menuAnimado"><a title="libros" href="./libros.html">Libros</a></div>
+            <div class="sub sub4 menuAnimado"><a title="hardware" href="./hardware.html">Hardware</a></div>
+            <div class="sub sub5">Contacto</div>
+            <div class="sub sub6 menuAnimado"><a title="carrito" href="./carrito.html"><img class="logo" src="../imagenes/logos/carrito.png" alt="Carrito"></a></div>
+        </nav>
+    </header>
+
+    <main>
+    <h1 class="titulo">Venta de equipo de seguridad y capacitacion técnica</h1>
+  <form class="contacto" action="#" method="get" name="formContacto">
+    <fieldset><!-- Comentario para el tutor -->
+      <legend>Detalles de contacto</legend>
+      <!--Datos de contacto-->
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" placeholder="Primer nombre" />
+      <label for="apellido">Apellido</label>
+      <input type="text" name="apellido" id="apellido" placeholder="Apellido" />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="email" required />
+      <label for="nContacto">Numero de Contacto</label>
+      <input type="text" name="nContacto" id="nContacto" placeholder="Numero de Contacto" />
+      <label for="asunto">Asunto</label>
+      <p><input type="text" name="asunto" id="asunto" placeholder="Asunto"/></p>
+      <label for="mensaje">Mensaje</label>
+      <textarea name="mensaje" for="mensaje" placeholder="Mensaje..."></textarea>
+      <label for="hear-about">¿Cómo escucho sobre nosotros?</label>
+      <select name="referrer" id="hear-about">
+        <option value="google">Google</option>
+        <option value="amigo">Amigo</option>
+        <option value="publicidad">Publicidad</option>
+        <option value="otro">Otro</option>
+      </select>
+      <!--Datos de contacto-->
+      <!--Botones-->
+      <input type="submit" name="enviar" value="enviar datos"/>
+    </fieldset>
+    </main>
+
+    <footer class="pie">
+        <p>Este es un footer.</p>
+        <p>Josue Rolando Gonzalez Ovalle, desarrollo web 41705</p>
+    </footer>
+
+</body>
+</html>

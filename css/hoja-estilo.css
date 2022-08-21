@@ -1,0 +1,337 @@
+/* Se importa el estilo de letra que se va a usar */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* Reseteo CSS, borra los margenes para que el programador los añada */
+* {
+    Margin: 0;
+    padding:0;
+  }
+
+/* Codigo que agrega el background a la pagina */
+html{
+    background-image: url("../imagenes/background/bluecarbon.jpg");
+    background-position: center;
+    background-repeat: repeat;
+  }
+  /*****************/
+
+/* Formato del body */
+body {
+    background-color: Thistle;
+    border: 2px solid Gray;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    min-width: 256px;
+    padding-top: 8px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    }
+    /*****************/
+
+/* Propiedades del header */
+header {
+    display: flex;
+    justify-content: center;
+}
+
+/* LOGO */
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+/* Configuracion menu de navegacion */
+.navbar {
+    display: grid;
+    width: 100%;
+    height: 30px;
+    grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+    grid-template-rows: 0.1fr;
+    color: white;
+    background-color: #a39ea3;
+    border: 4px solid #111111;
+    border-radius: 10px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub {
+    border-right: 2px solid #111111;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.sub a {
+    text-decoration: underline;
+    color: #111111;
+}
+
+/* Formatos a los enlaces a */
+
+a:visited {
+    color: rgb(160, 41, 150);
+}
+/*****************************************/
+
+/* Imagenes principales de cada seccion */
+.imagenPrincipal {
+    background-image: url(../imagenes/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 150px;
+}
+
+.principalLibros {
+    background-image: url(../imagenes/libros/muralLibros.jpg);
+}
+
+.principalHardware {
+    background-image: url(../imagenes/hardware/muralHardware.jpg);
+}
+
+.tituloDeTitulo {
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    color: rgb(77, 150, 165);
+    text-align: center;
+    background-color: #a5a4a5a4;
+    border: 4px #111111;
+    border-radius: 10px;
+    padding-inline: 16px;
+}
+
+.parrafoDeTitulo {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background-color: #af28afa4;
+}
+
+/* Configuracion flex productos principales */
+
+.bienvenida {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.container {
+    padding: 60px;
+    gap: 20px;
+    border: 2px solid green; /* BORRAR Solo para guiarme para implementar grid BORRAR */
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "item1 item2 item3";
+}
+
+.item {
+    background-color: rgb(160, 30, 143);
+    border-radius: 30px;
+    overflow: hidden; /* Me gusta mas sin esto */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    border: 1px solid red; /* BORRAR Solo para guiarme para implementar grid BORRAR */
+    transition: all 0.5s, background-color 1s;
+}
+
+.informacion {
+padding: 0 20px 20px 20px;
+}
+
+.item__imagen {
+    max-width: 100%;
+}
+/***********************************/
+
+/* Formato para formulario de contacto */
+form {
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+
+form label {
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"], form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+/*****************/
+
+
+/* Pie de pagina */
+.pie {
+    background-color: #0a268b;
+    padding-block: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+/*****************/
+
+/******* Animaciones ***********/
+
+.menuAnimado:hover {
+    transform: rotateZ(10deg);
+    background-color: aqua;
+}
+
+/******* Background Gradients **********/
+
+
+/******* Transformaciones ********/
+
+.item:hover {
+    transform: scale(1.1) translateY(-40px);
+    background-color: #e96acd;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/**********************************/
+
+
+/* Parte del responsive */
+/* Media Queri para tablets */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Media Querie para celulares */
+@media screen and (max-width:480px) {
+
+/* Barra de Navegacion en dos filas*/
+.navbar {
+    width: 100%;
+    height: 70px;
+    grid-template-columns: 0.5fr repeat(4, 1fr) 0.5fr;
+    grid-template-rows: 0.1fr;
+    color: white;
+    background-color: #a39ea3;
+    border: 4px solid #111111;
+    border-radius: 10px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "sub1 sub2 sub3"
+    "sub4 sub5 sub6";
+}
+
+.tituloDeTitulo {
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    color: rgb(77, 150, 165);
+    text-align: center;
+    background-color: #a5a4a5a4;
+    border: 4px #111111;
+    border-radius: 5px;
+    padding-inline: 0px;
+}
+
+.parrafoDeTitulo {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background-color: #af28afa4;
+}
+
+/* Items a mostrar en columna */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "item1"
+        "item2"
+        "item3";
+    }
+
+.item {
+    background-color: #e96acd;
+    border-radius: 30px;
+    overflow: hidden; /* Me gusta mas sin esto */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    border: 1px solid red; /* BORRAR Solo para guiarme para implementar grid BORRAR */
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+}
+ 
