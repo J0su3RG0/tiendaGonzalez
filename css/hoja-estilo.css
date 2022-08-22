@@ -102,6 +102,10 @@ a:visited {
     background-image: url(../imagenes/hardware/muralHardware.jpg);
 }
 
+.principalContacto {
+    background-image: url(../imagenes/contacto/muralContacto.jpg);
+}
+
 .tituloDeTitulo {
     font-family: 'Indie Flower', cursive;
     font-size: 30px;
@@ -215,7 +219,51 @@ textarea{
 	resize:none;
 	display:block;
 }
+
+.botonesFila {
+    display: flex;
+    justify-content: center;
+    
+  }
+
 /*****************/
+
+/* Tabla Compras */
+.tablaCompras {
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+  }
+  
+  /* Tabla Compras */
+  .tablaCompras2 {
+    border-right: none;
+    font-family: 'Indie Flower', cursive;
+    font-size: 24px;
+  }
+
+  /* Formato para las tablas */
+table {
+    font-size: 70%;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #9e9eb6;
+  }
+  td {
+    background-color: #BA99C0;
+  }
+  
+  .tablaCarro tr td{
+    font-size: 14px;
+  }
+
+/*****************************/
 
 
 /* Pie de pagina */
