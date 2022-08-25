@@ -4,60 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link type"text/css" rel="stylesheet" href="../css/hoja-estilo.css"/>
     <link rel="shorcut icon" href="../imagenes/logos/calabaza.svg">
     <title>Contacto</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar"> <!-- Menu de navegacion-->
-            <div class="sub sub1 menuAnimado"><img class="logo" src="../imagenes/logos/logo.webp" alt="logo"></div>
-            <div class="sub sub2 menuAnimado"><a title="inicio" href="../index.html">Inicio</a></div>
-            <div class="sub sub3 menuAnimado"><a title="libros" href="./libros.html">Libros</a></div>
-            <div class="sub sub4 menuAnimado"><a title="hardware" href="./hardware.html">Hardware</a></div>
-            <div class="sub sub5">Contacto</div>
-            <div class="sub sub6 menuAnimado"><a title="carrito" href="./carrito.html"><img class="logo" src="../imagenes/logos/carrito.png" alt="Carrito"></a></div>
-        </nav>
-    </header>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fs-4"> <!--Menu de navegacion con Bootstrap-->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo" src="../imagenes/logos/logo.webp" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="libros" href="../paginas/libros.html">Libros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="hardware" href="../paginas/hardware.html">Hardware</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="quiénes-somos" href="../paginas/quienesSomos.html">Quiénes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" title="contacto" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
 
-    <main>
-      <section class="imagenPrincipal principalContacto"><!--Imagen principal y mensaje de bienvenida-->
-        <h1 class="tituloDeTitulo">Contactanos</h2>
-        <p class="parrafoDeTitulo">Venta de equipo de seguridad y capacitacion técnica</p>
-    </section>
-  <form class="contacto" action="#" method="get" name="formContacto">
-    <fieldset><!-- Comentario para el tutor -->
-      <legend>Detalles de contacto</legend>
-      <!--Datos de contacto-->
-      <label for="nombre">Nombre</label>
-      <input type="text" name="nombre" id="nombre" placeholder="Primer nombre" />
-      <label for="apellido">Apellido</label>
-      <input type="text" name="apellido" id="apellido" placeholder="Apellido" />
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="email" required />
-      <label for="nContacto">Numero de Contacto</label>
-      <input type="text" name="nContacto" id="nContacto" placeholder="Numero de Contacto" />
-      <label for="asunto">Asunto</label>
-      <p><input type="text" name="asunto" id="asunto" placeholder="Asunto"/></p>
-      <label for="mensaje">Mensaje</label>
-      <textarea name="mensaje" for="mensaje" placeholder="Mensaje..."></textarea>
-      <label for="hear-about">¿Cómo escucho sobre nosotros?</label>
-      <select name="referrer" id="hear-about">
-        <option value="google">Google</option>
-        <option value="amigo">Amigo</option>
-        <option value="publicidad">Publicidad</option>
-        <option value="otro">Otro</option>
-      </select>
-      <!--Datos de contacto-->
-      <!--Botones-->
-      <input type="submit" name="enviar" value="enviar datos"/>
-    </fieldset>
-    </main>
+<main>
+  <section class="container">
+    <div class="row mt-5 gap-4 gap-md-0">
+      <div class="col-md-6">
+        <h3>Contacte con nosotros</h3>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Correo Electronico
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body fs-5"><code>DanteOSINT@protonmail.com</code></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Teléfono
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body fs-5">123 456 789</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Dirección
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body fs-5">Mordor <code> one does not simply walk into mordor </code> La calle de los Orcos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3>Formulario</h3>
+        <form class="fs-5">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Su nombre">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Dirección de correo</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@electronico.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Su mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="button" class="btn btn-secondary fs-5">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+
 
     <footer class="pie">
         <p>Este es un footer.</p>
         <p>Josue Rolando Gonzalez Ovalle, desarrollo web 41705</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -4,55 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link type"text/css" rel="stylesheet" href="css/hoja-estilo.css"/>
     <link rel="shorcut icon" href="./imagenes/logos/calabaza.svg">
     <title>Inicio</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar"> <!-- Menu de navegacion-->
-            <div class="sub sub1"><img class="logo" src="./imagenes/logos/logo.webp" alt="logo"></div>
-            <div class="sub sub2">Inicio</div>
-            <div class="sub sub3 menuAnimado"><a title="libros" href="paginas/libros.html">Libros</a></div>
-            <div class="sub sub4 menuAnimado"><a title="hardware" href="paginas/hardware.html">Hardware</a></div>
-            <div class="sub sub5 menuAnimado"><a title="contacto" href="paginas/contacto.html">Contacto</a></div>
-            <div class="sub sub6 menuAnimado"><a title="carrito" href="./paginas/carrito.html"><img class="logo" src="./imagenes/logos/carrito.png" alt="Carrito"></a></div>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fs-4"> <!--Menu de navegacion con Bootstrap-->
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo" src="./imagenes/logos/logo.webp" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link disabled" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" title="libros" href="./paginas/libros.html">Libros</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" title="hardware" href="./paginas/hardware.html">Hardware</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" title="quienes-somos" href="./paginas/quienesSomos.html">Quiénes Somos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" title="contacto" href="./paginas/contacto.html">Carrito</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+</header>
 
     <main>
-        <section class="imagenPrincipal"><!--Imagen principal y mensaje de bienvenida-->
-            <h2 class="tituloDeTitulo">Libros y Dispositivos</h2>
-            <p class="parrafoDeTitulo"> Aquí encontraras buenos libros y gadgets para realizar cosas interesantes</p>
+        <section class="imagenPrincipal principalIndex d-flex justify-content-center align-items-center"><!--Imagen principal y mensaje de bienvenida-->
+            <h2 class="text-white bg-secondary p-2 rounded">Libros y Dispositivos</h2>
         </section>
-        <!--Lo más visto en la pagina-->
-        <h1 class="bienvenida"> Lo más visto en la pagina</h1>
+        <!--Lo más visto en la pagina--><!--Comentario-->
         <section class="container">
-            <div class="item item1">
-                <img class="item__imagen" src="./imagenes/libros.png" alt="libro1">
-                <div class="informacion">
-                    <h4 class="item__titulo">El principito</h4>
-                    <p class="item__descripcion">El principito es una narración corta del escritor francés Antoine de Saint-Exupéry...</p>
-                    <button class="vermas__boton">Ver más...</button>
-                </div>
-            </div>
-            <div class="item item2">
-                <img class="item__imagen" src="./imagenes/libros.png" alt="libro2">
-                <div class="informacion">
-                    <h4 class="item__titulo">Guerra y Paz</h4>
-                    <p class="item__descripcion">Guerra y paz alterna en su magnífica trama historias familiares con las vicisitudes del ejército napoleónico...</p>
-                    <button class="vermas__boton">Ver más...</button>
-                </div>
-            </div>
-            <div class="item item3">
-                <img class="item__imagen" src="./imagenes/libros.png" alt="libro3">
-                <div class="informacion">
-                    <h4 class="item__titulo">Orgullo, Prejuicio y Zombies</h4>
-                    <p class="item__descripcion">La historia central contiene la misma trama de la obra de Austen, con la incorporación de zombies, en la que Elizabeth Bennet...</p>
-                    <button class="vermas__boton">Ver más...</button>
-                </div>
+            <h1>Lo más visto en la página</h1>
+            <div class="row mt-1">
+              <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./imagenes/libros/coverPrincipito.jpg" class="card-img-top" alt="El Principito">
+                    <div class="card-body">
+                      <h5 class="card-title">El Principito</h5>
+                      <p class="card-text">El principito es una narración corta del escritor francés Antoine de Saint-Exupéry...</p>
+                      <a href="./paginas/libros.html" class="btn btn-dark">Ver más</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./imagenes/libros/coverOrgulloPrejuicio.jpeg" class="card-img-top" alt="Orgullo y Prejuicio">
+                    <div class="card-body">
+                      <h5 class="card-title">Orgullo y Prejuicio</h5>
+                      <p class="card-text">La historia central contiene la misma trama de la obra de Austen, con la incorporación de zombies, en la que Elizabeth Bennet...</p>
+                      <a href="./paginas/libros.html" class="btn btn-dark">Ver más</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./imagenes/libros/coverGuerraPaz.jpeg" class="card-img-top" alt="Guerra y Paz">
+                    <div class="card-body">
+                      <h5 class="card-title">Guerra y Paz</h5>
+                      <p class="card-text">Guerra y paz alterna en su magnífica trama historias familiares con las vicisitudes del ejército napoleónico...</p>
+                      <a href="./paginas/libros.html" class="btn btn-dark">Ver más</a>
+                    </div>
+                  </div>
+              </div>
             </div>
         </section>
+
     </main>
 
     <footer class="pie">
@@ -60,5 +88,6 @@
         <p>Josue Rolando Gonzalez Ovalle, desarrollo web 41705</p>
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
