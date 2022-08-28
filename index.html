@@ -9,7 +9,7 @@
     <link rel="shorcut icon" href="./imagenes/logos/calabaza.svg">
     <title>Inicio</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fs-4"> <!--Menu de navegacion con Bootstrap-->
     <div class="container-fluid">
@@ -32,7 +32,7 @@
             <a class="nav-link" title="quienes-somos" href="./paginas/quienesSomos.html">Quiénes Somos</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" title="contacto" href="./paginas/contacto.html">Carrito</a>
+            <a class="nav-link" title="contacto" href="./paginas/contacto.html">Contacto</a>
             </li>
         </ul>
         </div>
@@ -45,44 +45,54 @@
           <h2 class="text-white bg-secondary p-2 rounded">Libros y Dispositivos</h2>
       </section>
       <!--Lo más visto en la pagina--><!--Comentario-->
-      <section class="container">
-          <h1>Lo más visto en la página</h1>
-          <div class="row mt-1">
-            <div class="col-md-4">
-              <div class="card h-100 d-flex align-items-center">
-                  <img src="./imagenes/libros/coverPrincipito.jpg" class="card-img-top" alt="El Principito">
-                  <div class="card-body">
-                    <h5 class="card-title">El Principito</h5>
-                    <p class="card-text">El principito es una narración corta del escritor francés Antoine de Saint-Exupéry...</p>
-                    <a href="./paginas/libros.html" class="btn btn-dark">Ver más</a>
-                  </div>
-                </div>
+      <section class="container pb-3">
+        <h1>Lo más visto en la página</h1>
+        <!-- Sección del carousel -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000 pause">
+              <img src="./imagenes/libros/coverGuerraPaz250x300.jpeg" class="d-block w-20" alt="Guerra y Paz">
+              <div class="card-body">
+                <h5 class="card-title">Guerra y Paz</h5>
+                <p class="card-text">Guerra y paz alterna en su magnífica trama historias familiares con las vicisitudes del ejército napoleónico...</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-center">
+                <a href="./paginas/libros.html" class="btn btn-dark">Ver más</a>
+              </div>
+              </div>
             </div>
-            <div class="col-md-4">
-              <div class="card h-100 d-flex align-items-center">
-                  <img src="./imagenes/libros/coverOrgulloPrejuicio.jpeg" class="card-img-top" alt="Orgullo y Prejuicio">
-                  <div class="card-body">
-                    <h5 class="card-title">Orgullo y Prejuicio</h5>
-                    <p class="card-text">La historia central contiene la misma trama de la obra de Austen, con la incorporación de zombies, en la que Elizabeth Bennet...</p>
-                    <a href="./paginas/libros.html" class="btn btn-dark">Ver más</a>
-                  </div>
-                </div>
+            <div class="carousel-item container" data-bs-interval="5000 pause">
+              <img src="./imagenes/hardware/coverBadUSB.png" class="d-block w-20" alt="BadUSB">
+              <div class="card-body">
+                <h5 class="card-title">BadUSB</h5>
+                <p class="card-text">Una Bad USB programable, simula ser un teclado común con una secuencia de teclas programada...</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-center">
+                <a href="./paginas/hardware.html" class="btn btn-dark">Ver más</a>
+              </div>
+              </div>
             </div>
-            <div class="col-md-4">
-              <div class="card h-100 d-flex align-items-center">
-                  <img src="./imagenes/libros/coverGuerraPaz.jpeg" class="card-img-top" alt="Guerra y Paz">
-                  <div class="card-body">
-                    <h5 class="card-title">Guerra y Paz</h5>
-                    <p class="card-text">Guerra y paz alterna en su magnífica trama historias familiares con las vicisitudes del ejército napoleónico...</p>
-                    <a href="./paginas/libros.html" class="btn btn-dark">Ver más</a>
-                  </div>
-                </div>
+            <div class="carousel-item container" data-bs-interval="5000 pause">
+              <img src="./imagenes/libros/coverPrincipito250x300.jpg" class="d-block w-20" alt="El Principito">
+              <div class="card-body">
+                <h5 class="card-title">El Principito</h5>
+                <p class="card-text">El principito es una narración corta del escritor francés Antoine de Saint-Exupéry...</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-center">
+                <a href="./paginas/libros.html" class="btn btn-dark">Ver más</a>
+              </div>
+              </div>
             </div>
           </div>
-      </section>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
   </main>
 
-  <div class="card text-bg-dark">
+  <div class="card text-bg-dark mt-auto">
     <div class="card-header">
       Este es un footer.
     </div>

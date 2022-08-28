@@ -7,7 +7,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Indie Flower';
-  }
+}
 
 /* LOGO */
 .logo {
@@ -54,24 +54,40 @@
 .card-img-top {
     width: 50%;
     height: 50%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+}
+
+img
+{
+   margin: auto;
+}
+
+/*** Trancisiones y animaciones *****/
+
+.card-img-top:hover {
+    width: 100%;
 }
 
 
-/* Pie de pagina */
-.pie {
-    background-color: #0a268b;
-    padding-block: 10px;
+
+/*   Pseudo-clases   */
+
+*::selection {
+    background-color: black;
     color: white;
-    text-align: center;
-    font-size: x-large;
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
+}
+
+*::placeholder {
+    color: rgb(255, 0, 119);
+    font-size: 1.5em;
   }
-/*****************/
 
-/* Estilo Mobile */
+ .form-control:hover {
+    background-color: rgba(165, 163, 163, 0.904);
+    color: white;
+  }
 
-@media (min-width: 576px) {
-    
- }
+  /***********************************************/
