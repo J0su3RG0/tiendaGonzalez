@@ -1,1 +1,18 @@
-/*# sourceMappingURL=estilo.css.map */
+@charset "UTF-8";
+/* Se importa el estilo de letra que se va a usar */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+/* Reseteo CSS, borra los margenes para que el programador los añada */
+* {
+  Margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Indie Flower";
+}
+*::-moz-selection {
+  background-color: black;
+  color: white;
+}
+*::selection {
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=estilo.css.map */

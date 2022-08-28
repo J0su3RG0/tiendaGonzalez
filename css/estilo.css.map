@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"estilo.css"}
+{"version":3,"sources":["estilo.css","partials/_variables.scss","partials/_reset.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAhB,mDAAA;AACQ,iFAAA;ACDR,sEAAA;AACA;EACI,SAAA;EACA,UAAA;EACA,sBAAA;EACA,2BDFS;ADMb;AEFI;EACI,uBAAA;EACA,YAAA;AFIR;AENI;EACI,uBAAA;EACA,YAAA;AFIR","file":"estilo.css"}

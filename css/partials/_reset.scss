@@ -3,5 +3,10 @@
     Margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Indie Flower';
+    font-family: $fontFlower;
+
+    &::selection {
+        background-color: black;
+        color: white;
+    }
 }
