@@ -5,8 +5,14 @@
     box-sizing: border-box;
     font-family: $fontFlower;
 
+    /* Psedudo-clases */
     &::selection {
         background-color: black;
         color: white;
     }
+
+    &::placeholder {
+        color: secondaryColor;
+        font-size: 1.5em;
+      }
 }

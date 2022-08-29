@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Indie Flower";
+  /* Psedudo-clases */
 }
 *::-moz-selection {
   background-color: black;
@@ -15,4 +16,59 @@
 *::selection {
   background-color: black;
   color: white;
+}
+*::-moz-placeholder {
+  color: secondaryColor;
+  font-size: 1.5em;
+}
+*:-ms-input-placeholder {
+  color: secondaryColor;
+  font-size: 1.5em;
+}
+*::placeholder {
+  color: secondaryColor;
+  font-size: 1.5em;
+}
+
+header .logo {
+  width: 50px;
+  height: 50px;
+}
+header .nav-bar {
+  font-size: medium;
+}
+
+/* Imagenes de fondo para cada pagina */
+.imagenPrincipal {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.principalIndex {
+  background-image: url("../imagenes/principal.jpg");
+}
+.principalLibros {
+  background-image: url("../imagenes/libros/muralLibros.jpg");
+}
+.principalHardware {
+  background-image: url("../imagenes/hardware/muralHardware.jpg");
+}
+
+img {
+  margin: auto;
+  /*** Trancisiones y animaciones *****/
+}
+img .imgTransition:hover {
+  transition: 1s;
+  transform: scale(1.3) translateY(-20px);
+}
+
+form .form-control:hover {
+  background-color: mainColor;
+  color: rgb(161, 52, 52);
 }/*# sourceMappingURL=estilo.css.map */
