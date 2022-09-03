@@ -1,0 +1,9 @@
+.cajaGrid {
+    display: grid;
+    grid-template-columns: 300px 100px;
+    grid-template-rows: 40px 100px;
+  }
+ 
+.gItem {
+    border: 1px solid red;
+}

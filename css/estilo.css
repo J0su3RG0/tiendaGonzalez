@@ -72,4 +72,15 @@ img {
 form .form-control:hover {
   background-color: mainColor;
   color: rgb(161, 52, 52);
-}/*# sourceMappingURL=estilo.css.map */
+}
+
+.cajaGrid {
+  display: grid;
+  grid-template-columns: 300px 100px;
+  grid-template-rows: 40px 100px;
+}
+
+.gItem {
+  border: 1px solid red;
+}
+/*# sourceMappingURL=estilo.css.map */
