@@ -43,27 +43,30 @@ header .nav-bar {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 30vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .principalIndex {
   background-image: url("../imagenes/principal.jpg");
 }
+
 .principalLibros {
   background-image: url("../imagenes/libros/muralLibros.jpg");
 }
+
 .principalHardware {
   background-image: url("../imagenes/hardware/muralHardware.jpg");
 }
 
 img {
   margin: auto;
-  /*** Trancisiones y animaciones *****/
 }
 
+/*** Trancisiones y animaciones *****/
 .imgTransition:hover {
   transition: 1s;
   transform: scale(1.3) translateY(-20px);
@@ -76,11 +79,48 @@ form .form-control:hover {
 
 .cajaGrid {
   display: grid;
-  grid-template-columns: 300px 100px;
-  grid-template-rows: 40px 100px;
+  grid-template-rows: auto;
+  grid-template-areas: "a" "b" "c" "d";
+  justify-items: center;
 }
 
-.gItem {
-  border: 1px solid red;
+.a {
+  grid-area: a;
 }
-/*# sourceMappingURL=estilo.css.map */
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+@media screen and (min-width: 1024px) {
+  .cajaGrid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "a b" "c d";
+    justify-items: center;
+  }
+  .centrado {
+    display: grid;
+    justify-content: center;
+  }
+  .a {
+    grid-area: a;
+  }
+  .b {
+    grid-area: b;
+  }
+  .c {
+    grid-area: c;
+  }
+  .d {
+    grid-area: d;
+  }
+}/*# sourceMappingURL=estilo.css.map */
