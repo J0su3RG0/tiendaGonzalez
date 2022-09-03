@@ -1,0 +1,36 @@
+.cajaGrid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "a"
+  "b"
+  "c"
+  "d";
+  justify-items: center;
+}
+
+.a {grid-area:a;}
+.b {grid-area:b;}
+.c {grid-area:c;}
+.d {grid-area:d;}
+
+@media screen and (min-width: 1024px){
+  .cajaGrid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "a b"
+    "c d";
+    justify-items: center;
+  }
+
+  .centrado {
+    display: grid;
+    justify-content: center;
+  }
+
+  .a {grid-area:a;}
+  .b {grid-area:b;}
+  .c {grid-area:c;}
+  .d {grid-area:d;}
+}

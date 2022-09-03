@@ -8,17 +8,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
 
-    .principalIndex {
-        background-image: url("../imagenes/principal.jpg");
-    }
+.principalIndex {
+    background-image: url("../imagenes/principal.jpg");
+}
 
-    .principalLibros {
-        background-image: url("../imagenes/libros/muralLibros.jpg");
-    }
+.principalLibros {
+    background-image: url("../imagenes/libros/muralLibros.jpg");
+}
 
-    .principalHardware {
-        background-image: url("../imagenes/hardware/muralHardware.jpg");
-    }
-
+.principalHardware {
+    background-image: url("../imagenes/hardware/muralHardware.jpg");
 }
