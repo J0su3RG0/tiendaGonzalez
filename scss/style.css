@@ -135,18 +135,6 @@ header .nav-item-5 {
   flex-direction: column;
 }
 
-.error404 {
-  background-image: url("../imagenes/index/404tinied.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 img {
   margin: auto;
 }
@@ -291,4 +279,4 @@ form .form-control:hover {
   height: 52;
 }
 
-/***************************//*# sourceMappingURL=estilo.css.map */
+/***************************//*# sourceMappingURL=style.css.map */

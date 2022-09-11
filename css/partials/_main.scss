@@ -46,3 +46,15 @@ $imagenPrincipal: (
     align-items: map-get($imagenPrincipal, alinearItems);
     flex-direction: map-get($imagenPrincipal, direccionFlex);
 }
+
+.error404 {
+    background-image: url("../imagenes/index/404tinied.jpg");
+    background-repeat: map-get($imagenPrincipal, noRepetir);
+    background-size: map-get($imagenPrincipal, cubierta);
+    background-position: map-get($imagenPrincipal, posicionamiento);
+    height: 80vh;
+    display: map-get($imagenPrincipal, disposicion);
+    justify-content: map-get($imagenPrincipal, justificarContenido);
+    align-items: map-get($imagenPrincipal, alinearItems);
+    flex-direction: map-get($imagenPrincipal, direccionFlex);
+}
