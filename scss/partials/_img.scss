@@ -1,0 +1,32 @@
+img {
+   margin: auto;
+}
+
+   /*** Trancisiones y animaciones *****/
+.imgTransition:hover {
+    transition: 1s;
+    transform: scale(1.3) translateY(-20px);
+}
+
+
+/* Se utiliza mixin */
+@mixin centrarImagen($direction, $justify, $aling) {
+   display: flex;
+   flex-direction: $direction;
+   justify-content: $justify;
+   align-items: $aling;
+}
+
+.centrarImagen {
+   @include centrarImagen(center, center, space-around)
+}
+
+.imagenProducto {
+   -webkit-animation:tilt-in-top-1 .6s cubic-bezier(.25,.46,.45,.94) both;
+   animation:tilt-in-top-1 .6s cubic-bezier(.25,.46,.45,.94) both;
+   animation-delay: 0.2s;
+}
+
+
+ @-webkit-keyframes tilt-in-top-1{0%{-webkit-transform:rotateY(30deg) translateY(-300px) skewY(-30deg);transform:rotateY(30deg) translateY(-300px) skewY(-30deg);opacity:0}100%{-webkit-transform:rotateY(0deg) translateY(0) skewY(0deg);transform:rotateY(0deg) translateY(0) skewY(0deg);opacity:1}}
+ @keyframes tilt-in-top-1{0%{-webkit-transform:rotateY(30deg) translateY(-300px) skewY(-30deg);transform:rotateY(30deg) translateY(-300px) skewY(-30deg);opacity:0}100%{-webkit-transform:rotateY(0deg) translateY(0) skewY(0deg);transform:rotateY(0deg) translateY(0) skewY(0deg);opacity:1}}

@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/* Se importa el estilo de letra que se va a usar */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+/* Se añade una variable de extensión que será llamada en el footer */
+.fab {
+  width: 100px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .fab:hover {
+    transition: 1s;
+    transform: scale(1.3) translateY(-20px); }
+
+/* Reseteo CSS, borra los margenes para que el programador los añada */
+* {
+  Margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Indie Flower";
+  /* Psedudo-clases */ }
+  *::selection {
+    background-color: black;
+    color: white; }
+  *::placeholder {
+    color: secondaryColor;
+    font-size: 1.5em; }
+
+header .logo {
+  width: 50px;
+  height: 50px; }
+
+header .nav-item {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+header .nav-bar {
+  font-size: medium; }
+
+header .nav-item-1 {
+  animation-delay: 0.2s; }
+
+header .nav-item-2 {
+  animation-delay: 0.4s; }
+
+header .nav-item-3 {
+  animation-delay: 0.6s; }
+
+header .nav-item-4 {
+  animation-delay: 0.8s; }
+
+header .nav-item-5 {
+  animation-delay: 1s; }
+
+/* KeyFrame de cssanimista */
+/* Animacion de los elementos de la barra de navegacion */
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+/****************************/
+/* Mapa con las caracteristicas que se le dan a las portadas */
+.principalIndex {
+  background-image: url("../imagenes/principalTinied.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.principalLibros {
+  background-image: url("../imagenes/libros/muralLibrosTinied.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.principalHardware {
+  background-image: url("../imagenes/hardware/muralHardwareTinied.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+img {
+  margin: auto; }
+
+/*** Trancisiones y animaciones *****/
+.imgTransition:hover {
+  transition: 1s;
+  transform: scale(1.3) translateY(-20px); }
+
+/* Se utiliza mixin */
+.centrarImagen {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: space-around; }
+
+.imagenProducto {
+  -webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.2s; }
+
+@-webkit-keyframes tilt-in-top-1 {
+  0% {
+    -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1; } }
+
+@keyframes tilt-in-top-1 {
+  0% {
+    -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1; } }
+
+form .form-control:hover {
+  background-color: mainColor;
+  color: #a13434; }
+
+.cajaGrid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "a" "b" "c" "d";
+  justify-items: center; }
+
+.a {
+  grid-area: a; }
+
+.b {
+  grid-area: b; }
+
+.c {
+  grid-area: c; }
+
+.d {
+  grid-area: d; }
+
+@media screen and (min-width: 1024px) {
+  .cajaGrid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "a b" "c d";
+    justify-items: center; }
+  .centrado {
+    display: grid;
+    justify-content: center; }
+  .a {
+    grid-area: a; }
+  .b {
+    grid-area: b; }
+  .c {
+    grid-area: c; }
+  .d {
+    grid-area: d; } }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: "rgba(165, 163, 163, 0.904)";
+  color: white;
+  padding-block: 20px; }
+  .footer .iconos {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+    .footer .iconos .fab {
+      padding: 1rem; }
+
+/* Map */
+.fa-facebook {
+  background-color: blue; }
+
+.fa-instagram {
+  background-color: #a39396; }
+
+.fa-whatsapp {
+  background-color: green; }
+
+/**************************/
+/* Uso de la clase extend */
+/* Uso de la clase mixin */
+.fa-instagram {
+  width: 150px;
+  height: 75px; }
+
+.fa-facebook {
+  width: 100px;
+  height: 52px; }
+
+.fa-whatsapp {
+  width: 100px;
+  height: 52; }
+
+/***************************/

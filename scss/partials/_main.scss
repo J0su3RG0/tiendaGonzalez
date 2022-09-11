@@ -1,0 +1,48 @@
+/* Mapa con las caracteristicas que se le dan a las portadas */
+
+$imagenPrincipal: (
+    noRepetir: no-repeat,
+    cubierta: cover,
+    posicionamiento: center center,
+    altura: 35vh,
+    disposicion: flex,
+    justificarContenido: center,
+    alinearItems: center,
+    direccionFlex: column,
+);
+
+.principalIndex {
+    background-image: url("../imagenes/principalTinied.jpg");
+    background-repeat: map-get($imagenPrincipal, noRepetir);
+    background-size: map-get($imagenPrincipal, cubierta);
+    background-position: map-get($imagenPrincipal, posicionamiento);
+    height: map-get($imagenPrincipal, altura);
+    display: map-get($imagenPrincipal, disposicion);
+    justify-content: map-get($imagenPrincipal, justificarContenido);
+    align-items: map-get($imagenPrincipal, alinearItems);
+    flex-direction: map-get($imagenPrincipal, direccionFlex);
+}
+
+.principalLibros {
+    background-image: url("../imagenes/libros/muralLibrosTinied.jpg");
+    background-repeat: map-get($imagenPrincipal, noRepetir);
+    background-size: map-get($imagenPrincipal, cubierta);
+    background-position: map-get($imagenPrincipal, posicionamiento);
+    height: 20vh;
+    display: map-get($imagenPrincipal, disposicion);
+    justify-content: map-get($imagenPrincipal, justificarContenido);
+    align-items: map-get($imagenPrincipal, alinearItems);
+    flex-direction: map-get($imagenPrincipal, direccionFlex);
+}
+
+.principalHardware {
+    background-image: url("../imagenes/hardware/muralHardwareTinied.jpg");
+    background-repeat: map-get($imagenPrincipal, noRepetir);
+    background-size: map-get($imagenPrincipal, cubierta);
+    background-position: map-get($imagenPrincipal, posicionamiento);
+    height: 20vh;
+    display: map-get($imagenPrincipal, disposicion);
+    justify-content: map-get($imagenPrincipal, justificarContenido);
+    align-items: map-get($imagenPrincipal, alinearItems);
+    flex-direction: map-get($imagenPrincipal, direccionFlex);
+}
