@@ -100,7 +100,7 @@ header .nav-item-5 {
 /****************************/
 /* Mapa con las caracteristicas que se le dan a las portadas */
 .principalIndex {
-  background-image: url("../imagenes/principal.jpg");
+  background-image: url("../imagenes/principalTinied.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -112,7 +112,7 @@ header .nav-item-5 {
 }
 
 .principalLibros {
-  background-image: url("../imagenes/libros/muralLibros.jpg");
+  background-image: url("../imagenes/libros/muralLibrosTinied.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -124,7 +124,7 @@ header .nav-item-5 {
 }
 
 .principalHardware {
-  background-image: url("../imagenes/hardware/muralHardware.jpg");
+  background-image: url("../imagenes/hardware/muralHardwareTinied.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

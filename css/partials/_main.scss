@@ -12,7 +12,7 @@ $imagenPrincipal: (
 );
 
 .principalIndex {
-    background-image: url("../imagenes/principal.jpg");
+    background-image: url("../imagenes/principalTinied.jpg");
     background-repeat: map-get($imagenPrincipal, noRepetir);
     background-size: map-get($imagenPrincipal, cubierta);
     background-position: map-get($imagenPrincipal, posicionamiento);
@@ -24,7 +24,7 @@ $imagenPrincipal: (
 }
 
 .principalLibros {
-    background-image: url("../imagenes/libros/muralLibros.jpg");
+    background-image: url("../imagenes/libros/muralLibrosTinied.jpg");
     background-repeat: map-get($imagenPrincipal, noRepetir);
     background-size: map-get($imagenPrincipal, cubierta);
     background-position: map-get($imagenPrincipal, posicionamiento);
@@ -36,7 +36,7 @@ $imagenPrincipal: (
 }
 
 .principalHardware {
-    background-image: url("../imagenes/hardware/muralHardware.jpg");
+    background-image: url("../imagenes/hardware/muralHardwareTinied.jpg");
     background-repeat: map-get($imagenPrincipal, noRepetir);
     background-size: map-get($imagenPrincipal, cubierta);
     background-position: map-get($imagenPrincipal, posicionamiento);
