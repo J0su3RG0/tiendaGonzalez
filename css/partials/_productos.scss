@@ -1,9 +1,0 @@
-.productos {
-
-    @each $color in blue, yellow, red, {
-        .card-body-#{$color} {
-            background-color: $color;
-        }
-    }
-
-}
