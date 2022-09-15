@@ -1,0 +1,32 @@
+header {
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-item {
+        -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
+        animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
+    }
+
+    .nav-bar {
+        font-size: medium;
+    }
+
+    @for $item from 1 through  5 {
+        .nav-item-#{$item} {
+            animation-delay: $item*0.2s;
+        }
+    }
+}
+
+
+
+/* KeyFrame de cssanimista */
+/* Animacion de los elementos de la barra de navegacion */
+
+ @-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+ @keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+
+ /****************************/

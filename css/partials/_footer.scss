@@ -1,0 +1,57 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: $mainColor;
+    color: white;
+    padding-block: 20px;
+
+    .iconos {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .fab {
+            padding: 1rem;
+        }
+    }
+}
+
+/* Map */
+$redesSociales: (
+    facebook: blue,
+    instagram: rgb(163, 147, 150),
+    whatsapp: green,
+);
+
+@each $redSocial, $colorDeRed in $redesSociales {
+    .fa-#{$redSocial} {
+        background-color: $colorDeRed;
+    }
+}
+/**************************/
+
+
+/* Uso de la clase extend */
+.fab {
+    @extend %iconTransition;
+}
+
+/* Uso de la clase mixin */
+@mixin tamanos($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+  }
+
+.fa-instagram {
+    @include tamanos(150px, 75px);
+}
+
+.fa-facebook {
+    @include tamanos(100px, 52px);
+}
+
+.fa-whatsapp {
+    @include tamanos(100px, 52);
+}
+
+/***************************/

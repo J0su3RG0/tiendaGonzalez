@@ -9,3 +9,6 @@ package.json
 ./css/estilo.css.map
 ./css/estilo.scss
 ./css/partials
+
+#Ignora el mismo gitignore
+.gitignore
