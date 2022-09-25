@@ -6,9 +6,7 @@ package-lock.json
 package.json
 
 #Ignora lo hecho con la extension SASS de Visual Studio Code
-./css/estilo.css.map
-./css/estilo.scss
-./css/partials
+css
 
 #Ignora el mismo gitignore
 .gitignore
